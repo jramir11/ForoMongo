@@ -7,12 +7,12 @@
 <body>
     <center>
     <div class="formForo">
-        <h1>Panel de Mensajes de Dojo</h1>
+        <h2>Panel de Mensajes de Dojo</h2>
         <form action="/mensaje" method="post" >
             <div>
                 <label class="input" for="nombre">Nombre: </label><br>
                 <input class="input-cajas1" type="text" name="nombre" minlength="2" maxlength="200"><br>
-                <label class="input" for="comentario">Mensaje: </label><br>
+                <label class="input-label-commen" for="comentario">Mensaje: </label><br>
                 <textarea class="input-cajas2" name="comentario" id="comentario" maxlength="200" cols="40" rows="5" minlength="2"></textarea><br>
                 <button class="btnInput">Postear el mensaje</button>
             </div>
@@ -32,9 +32,9 @@
                     <form action="/chatcomment/<%= chat[i]._id %>" method="post" >
                         <label class="input2" for="nombre">Nombre: </label><br>
                         <input class="input2-cajas1" type="text" name="nombre" minlength="2" maxlength="200"><br>
-                        <label class="input2" for="comentario">Comentario: </label><br>
+                        <label class="input2-commen" for="comentario">Comentario: </label><br>
                         <textarea class="input2-cajas2" name="comentario" maxlength="200" cols="40" rows="5" minlength="2"></textarea><br>
-                        <button class="btnInput2" type="submit">Post Comentario</button><br>
+                        <button class="btnInput2" type="submit">Postear Comentario</button><br>
                     </form>
                 </section>         
             <% } %>

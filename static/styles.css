@@ -3,6 +3,7 @@
     padding: 0px;
     margin: 0px;
     margin-left: 0px;
+    font-family: sans-serif;
 }
 
 .formForo {
@@ -17,11 +18,15 @@
     margin-left: -190px;
 }
 .input-cajas2 {
-    margin-left: -50px;
+    margin-left: -60px;
 }
 .btnInput {
     width: 150px;
-    margin-left: 120px;
+    margin-left: 90px;
+    box-shadow: 5px 4px;
+}
+.input-label-commen {
+    margin-left: -295px;
 }
 
 
@@ -32,12 +37,17 @@
     margin-left: -100px;
 }
 .input2-cajas2 {
-    margin-left: 40px;
+    margin-left: 30px;
 }
 .btnInput2 {
     width: 150px;
-    margin-left: 210px;
+    margin-left: 180px;
+    box-shadow: 5px 4px;
 }
+.input2-commen {
+    margin-left: -180px;
+}
+
 
 .chat1 {
     margin-left: 60px; 

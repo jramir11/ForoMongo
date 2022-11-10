@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Chat</title>
+</head>
+<body>
+    <center>
+    <div class="formForo">
+        <h1>Panel de Mensajes de Dojo</h1>
+        <form action="/mensaje" method="post" >
+            <div>
+                <label class="input" for="nombre">Nombre: </label><br>
+                <input class="input-cajas1" type="text" name="nombre" minlength="2" maxlength="200"><br>
+                <label class="input" for="comentario">Mensaje: </label><br>
+                <textarea class="input-cajas2" name="comentario" id="comentario" maxlength="200" cols="40" rows="5" minlength="2"></textarea><br>
+                <button class="btnInput">Postear el mensaje</button>
+            </div>
+        </form>
+
+        <h3><%= mensaje %></h3>
+        <section>
+            <% for (let i in chat) { %>
+                <section>
+                    <h4 class="chat1">Nombre: <%= chat[i].nombre %></h4>
+                    <h4 class="chat1">Mensaje: <%= chat[i].comentario %> </h4><br>
+                    
+                    <% for (let j in chat[i].postcomentario) { %>
+                        <h5 class="chat1">Nombre: <%= chat[i].postcomentario[j].nombre %></h5>
+                        <h5 class="chat1">Comentario: <%= chat[i].postcomentario[j].comentario %> </h5><br>
+                        <% } %>
+                    <form action="/chatcomment/<%= chat[i]._id %>" method="post" >
+                        <label class="input2" for="nombre">Nombre: </label><br>
+                        <input class="input2-cajas1" type="text" name="nombre" minlength="2" maxlength="200"><br>
+                        <label class="input2" for="comentario">Comentario: </label><br>
+                        <textarea class="input2-cajas2" name="comentario" maxlength="200" cols="40" rows="5" minlength="2"></textarea><br>
+                        <button class="btnInput2" type="submit">Post Comentario</button><br>
+                    </form>
+                </section>         
+            <% } %>
+        </section>
+    </div>  
+    </center>  
+</body>
+</html>

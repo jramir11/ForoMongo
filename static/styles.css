@@ -1,0 +1,45 @@
+* {
+    /*border: 2px solid red;*/
+    padding: 0px;
+    margin: 0px;
+    margin-left: 0px;
+}
+
+.formForo {
+    border: 2px solid black;
+    width: 400px;
+}
+
+.input {
+    margin-left: -300px;
+}
+.input-cajas1 {
+    margin-left: -190px;
+}
+.input-cajas2 {
+    margin-left: -50px;
+}
+.btnInput {
+    width: 150px;
+    margin-left: 120px;
+}
+
+
+.input2 {
+    margin-left: -200px;
+}
+.input2-cajas1 {
+    margin-left: -100px;
+}
+.input2-cajas2 {
+    margin-left: 40px;
+}
+.btnInput2 {
+    width: 150px;
+    margin-left: 210px;
+}
+
+.chat1 {
+    margin-left: 60px; 
+    text-align: left;
+}
